@@ -1,0 +1,23 @@
+{
+  "name": "bun_encrypt_db",
+  "module": "src/index.ts",
+  "type": "module",
+  "devDependencies": {
+    "bun-types": "latest",
+    "prisma": "^5.5.2"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.5.2",
+    "@types/lodash": "^4.14.200",
+    "axios": "^1.6.0",
+    "lodash": "^4.17.21",
+    "sodium-plus": "^0.9.0"
+  },
+  "scripts": {
+    "start": "bun ./src/index.ts",
+    "gen_keys": "bun ./src/make-keys.ts"
+  }
+}

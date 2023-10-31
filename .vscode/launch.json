@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "bun",
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "request": "launch",
+            "name": "Debug File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "stopOnEntry": false,
+            "watchMode": true,
+            "runtime": "bun",
+            "env": {
+                "DATABASE_URL":"file:./dev.db"
+            }
+        },
+        {
+            "type": "bun",
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "request": "launch",
+            "name": "Run File",
+            "program": "${file}",
+            "cwd": "${workspaceFolder}",
+            "noDebug": false,
+            "watchMode": true,
+            "runtime": "bun",
+            "env": {
+                "DATABASE_URL":"file:./dev.db"
+            }
+        },
+        {
+            "type": "bun",
+            "internalConsoleOptions": "openOnFirstSessionStart",
+            "request": "attach",
+            "name": "Attach Bun",
+            "url": "ws://localhost:6499/",
+            "stopOnEntry": false
+        }
+    ]
+}
